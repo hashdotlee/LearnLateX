@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{graphicx}
+\title{Introduction to Latex}
+\author{Le Viet Hoang}
+\begin{document}
+\tableofcontents
+\maketitle
+\section{Problem}
+\label{sec: problem}
+This paragraph hear is fully justified, but note how we have \linebreak
+forced the end of the line to occur before the word ``forced".
+\section{Solution}
+\label{sec: solution}
+\begin{center}
+    These lines\\
+    are centred.
+\end{center}
+\section{Explaination}
+\label{sec: explain}
+\begin{flushleft}
+    Here we have some\\ left justified \\text.
+
+\end{flushleft}
+\section{Outline}
+\label{sec: outline}
+\begin{flushright}
+    Here we have some\\ right justified\\ text.
+\end{flushright}
+
+\centerline{This text is centered.}
+\newcommand{\timeOfDay}[2]{\textbf{#1-#2}}
+The Introductory \LaTeX \ course runs for four days from\timeOfDay{10}{00} to \timeOfDay{13}{00}, with a coffe break at \timeOfDay{11}{30}.
+\section{Reference}
+\begin{enumerate}
+    \item Animal
+    \begin{enumerate}
+        \item Mammals
+        \item Birds
+        \item reptiles. For example:
+        \begin{enumerate}
+            \item denosaurs
+            \item crocodiles
+        \end{enumerate}
+    \end{enumerate}
+    \item Vegetable
+    \begin{enumerate}
+        \item Cultivated
+        \item Wild
+    \end{enumerate}
+    \item Mineral
+\end{enumerate}
+\begin{tabular}{|l|cccc|}\cline{2-5}
+\multicolumn{1}{c|}{}&Year 1 &Year 2 &Year 3 &Total\\
+\multicolumn{1}{c|}{}&(\pounds){|}& (\pounds) &(\pounds) &(\pounds)\\\cline{2-5}
+\multicolumn{5}{l}{Equipment Expenditure} \\ \hline
+Books &100.00& 150.00& 200.00 &450.00\\\hline
+Stationary& 50.00 &45.00& 55.00& 150.00\\\hline
+Software &500.00& 600.00& 300.00& 1400.00\\\hline
+\multicolumn{5}{l}{Travel Expenditure} \\ \hline
+US Conference& 2000.00& 2500.00& 3000.00& 7500.00\\\hline
+EU Conference& 500.00& 500.00& 500.00& 1500.00\\ \hline\hline
+Total& 3150.00& 3795.00& 4055.00& 11000.00\\\hline
+\end{tabular}
+\end{document}

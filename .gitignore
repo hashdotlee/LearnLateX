@@ -11,6 +11,6 @@
 *.cb
 *.cb2
 .*.lb
-*.tex
+.tex
 *.gz
 *.fdb_latexmk
